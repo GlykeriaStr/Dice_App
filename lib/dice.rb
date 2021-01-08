@@ -18,4 +18,5 @@ class Dice
   def score
     @rolls.sum
   end
+
 end

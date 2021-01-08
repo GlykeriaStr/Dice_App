@@ -10,6 +10,10 @@ describe Dice do
     expect(actual).to eq expected
   end
 
+  it "gives the right number of results" do
+    expect(subject.roll(7).size).to eq 7
+  end
+
   it { is_expected.to respond_to(:previous)}
   it "should return previous dice rolls" do
     rolls = subject.roll
